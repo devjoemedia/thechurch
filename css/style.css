@@ -3,19 +3,23 @@
 }
 body {
   line-height: 1.2;
-  font-family:  sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #f8f9fa;
+}
+ul {
+  list-style: none;
 }
 img {
   width: 100%;
 }
+
 /* Start Nav */
 .navbar {
   font-size: 12px;
-  background: #007bff;
+  background-color: #007bff;
 }
 .navbar a {
-  color: #fff;
+  color: #fff !important;
 }
 /* Banner */
 #banner {
@@ -106,11 +110,12 @@ img {
   flex-wrap: wrap;
 }
 .pastor {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.4); */
   width: 30%;
   padding: 0;
   margin: 10px;
   background: #fff;;
+  border: 1px solid lightgray;
 }
 /* Sermons */
 .sermons-inner {
