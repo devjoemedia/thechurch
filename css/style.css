@@ -3,21 +3,38 @@
 }
 body {
   line-height: 1.2;
-  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  font-family:  sans-serif;
+  background: #f8f9fa;
+}
+img {
+  width: 100%;
 }
 /* Start Nav */
 .navbar {
   font-size: 12px;
-  background: #fff;
+  background: #007bff;
+}
+.navbar a {
+  color: #fff;
 }
 /* Banner */
 #banner {
   height: 75vh;
   width: 100vw;
   overflow: hidden;
-  background: url('../img/b1.jpg');
+  background: url("../img/b1.jpg");
   color: #fff;
   background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 83, 112, 0.6);
 }
 
 .barnner-inner {
@@ -26,7 +43,9 @@ body {
   display: grid;
   place-items: center;
 }
-
+.barnner-inner .col-md-6 {
+  z-index: 1;
+}
 
 /* End Banner */
 
@@ -41,20 +60,123 @@ body {
 /* End Welcome */
 
 #get-involve {
-  background: url('../img/b2.jpg');
-  background-position:  center;
-  height: 400px;
+  background: url("../img/b2.jpg");
+  background-position: center;
+  /* background: #007bff; */
+  height: 300px;
   color: #fff;
-}
-#get-involve >div{
+  position: relative;
   display: grid;
   place-items: center;
 }
 
+#get-involve .container {
+  z-index: 1;
+}
+
 #map {
-  background: url('../img/map.svg');
+  background: url("../img/b1.jpg");
 }
 .newsletter {
   margin: auto;
 }
+#newsletter {
+  background: #007bff;
+  color: #fff;
+}
+/* Page Info */
+.pageinfo {
+  height: 200px;
+  width: 100%;
+  background: url("../img/b1.jpg");
+  background-position: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.pageinfo h1 {
+  z-index: 1;
+}
+/* Pastors */
+#pastors {
+  background: #fff;
+}
+.pastors-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pastor {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  width: 30%;
+  padding: 0;
+  margin: 10px;
+  background: #fff;;
+}
+/* Sermons */
+.sermons-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sermon {
+  box-shadow: 0 0px 14px rgba(0,0,0,0.4);
+  margin: 5px;
+  width: 200px;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+  background: #fff;
+}
 /* Contacts */
+#contact {
+  background: #fff;
+}
+/* Footer */
+footer {
+  width: 100%;
+  background: #000;
+}
+
+/* ANIMATIONS */
+.slideInTop{
+  animation: slideInTop 2s ease ;
+}
+.slideInBottom{
+  animation: slideInBottom 2s ease ;
+}
+.slideInLeft{
+  animation: slideInLeft 2s ease ;
+}
+.slideInRight{
+  animation: slideInRight 2s ease ;
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

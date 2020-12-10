@@ -20,42 +20,74 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Start Navigaton -->
+<!-- Start Navigaton -->
+    <!-- Social Nav -->
+    <nav class="navbar navbar-expand-lg bg-light ">
+      <div class="container">
+        <marquee class="text-dark mr-auto">worshipcenter@gmail.com</marquee>
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class=" text-primary ml-2" href="index.html">Youtube</a>
+            </li>
+            <li class="nav-item">
+              <a class=" text-primary ml-2" href="about.html">Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class=" text-primary ml-2" href="sermons.html">Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a class=" text-primary ml-2" href="contact.html">Twitter</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- End Social Nav -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
+        <a class="navbar-brand mr-auto" href="index.html">CGWC</a>
 
-        <a class="navbar-brand mr-auto" href="index.html">TheChurch</a>
-      
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         -->
+        <div >
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="sermons.html">Sermons</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+
+        </div>
       </div>
     </nav>
+
 <!-- End Navigation -->
 <!-- Start Banner  -->
 <div id="banner">
     <div class="barnner-inner">
       <div class="col-md-6">
-
         <div class="barnner-info text-center">
-            <h1>Join Us In Worship</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sapiente assumenda fugit voluptatem id perferendis harum. Unde sit odio eligendi.
+            <h1 class="slideInTop">Join Us In Worship</h1>
+            <p class="slideInLeft">
+              Come, let us sing for joy to the Lord let us shout aloud to the Rock of our salvation,
+              Come, let us kneel before the Lord our Maker
             </p>
+            <p class="text-center slideInRight">Psalm 95:1-6</p>
+            <a href="about.html" class="btn btn-primary m-2 slideInBottom">About Us</a>
+            <a href="contact.html" class="btn btn-primary m-2 slideInBottom">Join Us</a>
         </div>
       </div>
     </div>
+    <div class="overlay"></div>
 </div>
 <!-- End Banner -->
 <!-- Start Welcome Info -->
@@ -66,9 +98,10 @@ text-center">
     <div class="welcome-info">
 
       <div class="col-md-8 ">
-        <h2 class="">Welcome To The Church</h2>
-        <p class=" ">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione cupiditate et suscipit blanditiis nobis, cumque perspiciatis possimus libero dolore animi minus ipsam, repellat fugiat dolorum voluptatum ullam repellendus! Autem!
+        <h2 class="">Welcome To Chosen Generation Worship Center</h2>
+        <p >
+          We have waited so long to have you among us. At last, the time has come. We are most delightfully welcoming you to join us today!
+          We so glad to welcome you to the house of God . Your presence in the nothing less than a blessing to us!
         </p>
         <a href="#" class="btn btn-outline-secondary ">Read More</a>
   
@@ -78,44 +111,52 @@ text-center">
 </div>
 <!-- End Welcome Info -->
 <!-- Start Pastors -->
-<div id="pastors" class="py-4 bg-light">
+<div id="pastors" class="py-4">
   <div class="container">
-    <h2 class="text-center">Meet Our Spiritual Leaders</h2>
-    <div class="row text-center py-4">
-      <div class="col-md-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/b1.jpg">
-        <h4>Rev. John Doe</h4>
-        <p>Youth Advisor</p>
-      </div>
-      <div class="col-md-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/b1.jpg">
-        <h4>Eva. Jane Doe</h4>
+    <h2 class="text-center">Our Leaders</h2>
+    <div class="pastors-inner text-center py-4">
+      <div class="pastor">
+        <img  src="./img/b1.jpg">
+        <h4 class="pt-3">App. Maxwell Ninson</h4>
         <p>Founder</p>
       </div>
-      <div class="col-md-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./img/b1.jpg">
-        <h4>Min. John Doe</h4>
+      <div class="pastor">
+        <img  src="./img/b1.jpg">
+        <h4 class="pt-3">Eva. Jane Doe</h4>
+        <p>Youth Advisor</p>
+      </div>
+      <div class="pastor">
+        <img  src="./img/b1.jpg">
+        <h4 class="pt-3">Min. John Doe</h4>
         <p>Resident Pastor</p>
       </div>
     </div>
   </div>
 </div>
 <!-- End pastors -->
-<!-- Get involved -->
-<div class="py-4 text-center" id="get-involve">
+<!-- video -->
+<div id="video" class="py-5">
   <div class="container">
-    <div class="pt-5" >
-      <h1 class="mb-3">Join Us In Worship</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium quasi fuga deleniti optio perspiciatis sapiente dolor suscipit officiis pariatur molestias quo rerum libero provident recusandae, deserunt harum repellat placeat?
-      </p>
-
+    <div class="col-md-6 mx-auto bg-dark p-5" id="map"></div>
+  </div>
+</div>
+<!-- End Video -->
+<!-- Get involved -->
+<div class="py-4 text-center bg-pirmary" id="get-involve">
+  <div class="container">
+    <div class="col-md-8 mx-auto pt-5">
+      <h1 class="mb-3">Join Us</h1>
+        <p>
+          We have waited so long to have you among us. At last, the time has come. We are most delightfully welcoming you to join us today!
+          We so glad to welcome you to the house of God . Your presence in the nothing less than a blessing to us!
+        </p>
     </div>
   </div>
+  <div class="overlay"></div>
 </div>
 <!-- End Get involve -->
 <!-- Start Contact Us -->
-<div id="contact" class="py-5">
+<div id="contact" class="py-5 ">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -139,14 +180,14 @@ text-center">
   </div>
 </div>
 <!-- End Contact -->
-<div  class="bg-light py-4">
+<div id="newsletter"  class="py-4">
   <div class="container">
     <h2 class="text-center mb-3">Subscribe to our news letter</h2>
-    <div class="newsletter col-md-6">
+    <div class="newsletter col-md-8">
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Enter email">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" >Subscribe</button>
+          <button class="btn btn-secondary" type="button" >Subscribe</button>
         </div>
       </div>
     </div>
@@ -154,8 +195,8 @@ text-center">
 </div>
 <!-- End News Letter -->
 <!-- Footer -->
-<footer class="py-3 bg-dark text-light text-center">
-  <p>&copy; 2020 All right reserved, the church</p>
+<footer class="py-3  text-light text-center">
+  <p>&copy; 2020 All right reserved, chosen Generation worship center</p>
 </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
