@@ -24,7 +24,7 @@
   <body>
 <!-- Start Navigaton -->
     <!-- Social Nav -->
-    <nav class="navbar  bg-light ">
+    <!-- <nav class="navbar  bg-light ">
       <div class="container">
         <div class="w-100 d-flex  align-items-center">
           <marquee class="text-primary mr-auto">worshipcenter@gmail.com</marquee>
@@ -44,9 +44,9 @@
             </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- End Social Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container d-flex">
         <a class="navbar-brand" href="index.html">CGWC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,22 +74,70 @@
 
 <!-- End Navigation -->
 <!-- Start Banner  -->
-<div id="banner">
-    <div class="barnner-inner">
-      <div class="col-md-6">
-        <div class="barnner-info text-center">
-            <h1 class="slideInTop">Join Us In Worship</h1>
-            <p class="slideInLeft">
-              Come, let us sing for joy to the Lord let us shout aloud to the Rock of our salvation,
-              Come, let us kneel before the Lord our Maker
-            </p>
-            <p class="text-center slideInRight">Psalm 95:1-6</p>
-            <a href="about.html" class="btn btn-primary m-2 slideInBottom">About Us</a>
-            <a href="contact.html" class="btn btn-primary m-2 slideInBottom">Join Us</a>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="overlay"></div>
+    <div class="carousel-item active">
+      
+      <img src="./img/b1.jpg" alt="" srcset="">
+      <div class="container">
+        <div class="carousel-caption col-md-6 mx-auto">
+          <h1 class=" slideInTop">Join Us In Worship</h1>
+          <p class="slideInLeft">
+            Come, let us sing for joy to the Lord let us shout aloud to the Rock of our salvation,
+            Come, let us kneel before the Lord our Maker
+          </p>
+          <p class="text-center slideInRight">Psalm 95:1-6</p>
+          <a href="about.html" class="btn btn-primary m-2 slideInBottom">About Us</a>
+          <a href="contact.html" class="btn btn-primary m-2 slideInBottom">Join Us</a>
         </div>
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="carousel-item">
+      <img src="./img/b2.jpg" alt="" srcset="">
+      <div class="container">
+        <div class="carousel-caption col-md-6 mx-auto">
+          <h1 class=" slideInTop">OUR CORE PURPOSE</h1>
+          <p class="slideInLeft">
+            Changing lives and Transforming human lives
+          </p>
+          <p class="text-center slideInRight">Psalm 95:1-6</p>
+          <a href="about.html" class="btn btn-primary m-2 slideInBottom">About Us</a>
+          <a href="contact.html" class="btn btn-primary m-2 slideInBottom">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="./img/b3.jpg" alt="" srcset="">
+      <div class="container">
+        <div class="carousel-caption col-md-6 mx-auto z-index-3">
+          <h1 class=" slideInTop">OUR MISSION</h1>
+          <p class="slideInLeft">
+            We are commited to the mission of raising leaders for the nation who are complete in Spirit, Mind and Body, that's contributing to the production of high leadership
+          </p>
+          <p class="text-center slideInRight">Psalm 95:1-6</p>
+          <a href="about.html" class="btn btn-primary m-2 slideInBottom">About Us</a>
+          <a href="contact.html" class="btn btn-primary m-2 slideInBottom">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
 </div>
 <!-- End Banner -->
 <!-- Start Welcome Info -->
@@ -101,11 +149,10 @@ text-center">
 
       <div class="col-md-8 ">
         <h2 class="">Welcome To Chosen Generation Worship Center</h2>
-        <p >
-          We have waited so long to have you among us. At last, the time has come. We are most delightfully welcoming you to join us today!
-          We so glad to welcome you to the house of God . Your presence in the nothing less than a blessing to us!
+        <p>
+          Chosen Generation Worship Center (CGWC) is a place where u can experience life at it's best it's a place for families, community and growth we are for fa about faith, Friendship and Generousity. For a detailed overview of who we are and what we believe you can visit us at Our Prampram branch (Prampram Water Works Accra Ghana - West Africa) or email us at worshipcenter@gmail.com or Call us on +233 248 578 600/+233 244 901 508
         </p>
-        <a href="#" class="btn btn-outline-secondary ">Read More</a>
+        <a href="about.html" class="btn btn-outline-secondary ">Read More</a>
   
       </div>
     </div>
@@ -116,19 +163,19 @@ text-center">
 <div id="pastors" class="py-4">
   <div class="container">
     <h2 class="text-center">Our Leaders</h2>
-    <div class="pastors-inner text-center py-4">
-      <div class="pastor">
-        <img  src="./img/b1.jpg">
+    <div class="pastors-inner text-center py-4 row">
+      <div class="pastor col-sm-3">
+        <img  src="./img/p1.jpg">
         <h4 class="pt-3">App. Maxwell Ninson</h4>
         <p>Founder</p>
       </div>
-      <div class="pastor">
-        <img  src="./img/b1.jpg">
+      <div class="pastor col-sm-3">
+        <img  src="./img/p3.jpg">
         <h4 class="pt-3">Eva. Jane Doe</h4>
         <p>Youth Advisor</p>
       </div>
-      <div class="pastor">
-        <img  src="./img/b1.jpg">
+      <div class="pastor col-sm-3">
+        <img  src="./img/p4.jpg">
         <h4 class="pt-3">Min. John Doe</h4>
         <p>Resident Pastor</p>
       </div>
@@ -145,13 +192,13 @@ text-center">
 </div>
 <!-- End Video -->
 <!-- Get involved -->
-<div class="py-4 text-center bg-pirmary" id="get-involve">
+<div class="py-5 text-center bg-pirmary" id="get-involve">
   <div class="container">
-    <div class="col-md-8 mx-auto pt-5">
-      <h1 class="mb-3">Join Us</h1>
-        <p>
-          We have waited so long to have you among us. At last, the time has come. We are most delightfully welcoming you to join us today!
-          We so glad to welcome you to the house of God . Your presence in the nothing less than a blessing to us!
+    <div class="col-md-8 mx-auto pt-5 ">
+      <h1 class="mb-3">OUR MISSION</h1>
+        <p class="lead"><span class="quote">&ldquo;</span>
+          We are commited to the mission of raising leaders for the nation who are complete in Spirit, Mind and Body, that is contributing to the production of high leadership
+          <span class="quote">&bdquo;</span>
         </p>
     </div>
   </div>
@@ -165,7 +212,7 @@ text-center">
       <div class="col-md-6">
         <h1>Contact Us</h1>
         <h4>
-          Kumasi, Ghana
+          Prampram, Ghana
         </h4>
         <p>
           Sunday Morning Classes: 9:30
@@ -176,27 +223,14 @@ text-center">
         <p>
           Office Hours: Monday-Friday 9:00-5:00
         </p>
-        <p>Email Us: thechurch@church.com</p>
+        <p>Email Us: worshipcenter@gmail.com</p>
       </div>
       <div class="col-md-6" id="map"></div>
     </div>
   </div>
 </div>
 <!-- End Contact -->
-<div id="newsletter"  class="py-4">
-  <div class="container">
-    <h2 class="text-center mb-3">Subscribe to our news letter</h2>
-    <div class="newsletter col-md-8">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Enter email">
-        <div class="input-group-append">
-          <button class="btn btn-secondary" type="button" >Subscribe</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End News Letter -->
+
 <!-- Footer -->
 <footer class="py-3  text-light text-center">
   <p>&copy; 2020 All right reserved, chosen Generation worship center</p>

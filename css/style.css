@@ -16,20 +16,42 @@ img {
 /* Start Nav */
 .navbar {
   font-size: 12px;
-  background-color: #007bff;
+  background-color: transparent;
 }
 .navbar a {
   color: #fff !important;
+  font-size: 1rem;
 }
 /* Banner */
+#myCarousel{
+  height: 100vh;
+}
+.carousel-inner,.carousel-item {
+  height: 100%;
+}
+.carousel-caption {
+  bottom: 0;
+  top: 40%;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+
+}
+.carousel-caption {
+  z-index: 3;
+}
 #banner {
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   overflow: hidden;
-  background: url("../img/b1.jpg");
   color: #fff;
   background-position: center;
   position: relative;
+}
+#banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .overlay {
@@ -39,6 +61,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(55, 83, 112, 0.6);
+  z-index: 2;
 }
 
 .barnner-inner {
@@ -64,18 +87,21 @@ img {
 /* End Welcome */
 
 #get-involve {
-  background: url("../img/b2.jpg");
+  background: url("../img/hand.jpg");
   background-position: center;
   /* background: #007bff; */
-  height: 300px;
+  height: 400px;
   color: #fff;
   position: relative;
   display: grid;
   place-items: center;
 }
+.quote {
+  font-size: 3rem;
+}
 
 #get-involve .container {
-  z-index: 1;
+  z-index: 3;
 }
 
 #map {
@@ -105,10 +131,7 @@ img {
 #pastors {
   background: #fff;
 }
-.pastors-inner {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .pastor {
   /* box-shadow: 0 4px 8px rgba(0,0,0,0.4); */
   width: 30%;
