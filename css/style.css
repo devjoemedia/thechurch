@@ -1,5 +1,6 @@
 .container {
   width: 75%;
+  margin: auto;
 }
 body {
   line-height: 1.2;
@@ -14,6 +15,10 @@ img {
 }
 
 /* Start Nav */
+header {
+  background: #000;
+  width: 100;
+}
 .navbar {
   font-size: 12px;
   background-color: transparent;
@@ -92,27 +97,37 @@ img {
 }
 /* End Welcome */
 
-#get-involve {
-  background: url("../img/hand.jpg");
-  background-position: center;
-  /* background: #007bff; */
-  height: 400px;
+.church-info {
+  /* background-position: center; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   color: #fff;
   position: relative;
   display: grid;
   place-items: center;
 }
+#mission {
+  background: url("../img/hand.jpg");
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+#vision {
+  background: url('../img/p5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .quote {
   font-size: 3rem;
 }
 
-#get-involve .container {
+.church-info .container {
   z-index: 3;
 }
 
-#map {
-  background: url("../img/b1.jpg");
-}
 .newsletter {
   margin: auto;
 }
@@ -139,29 +154,28 @@ img {
 }
 
 .pastor {
-  /* box-shadow: 0 4px 8px rgba(0,0,0,0.4); */
-  width: 30%;
   padding: 0;
-  margin: 10px;
+  margin: 5px;
   background: #fff;;
   border: 1px solid lightgray;
 }
 /* Sermons */
-.sermons-inner {
-  display: flex;
-  flex-wrap: wrap;
-}
-.sermon {
+
+.sermon .card {
   box-shadow: 0 0px 14px rgba(0,0,0,0.4);
-  margin: 5px;
-  width: 200px;
-  padding: 10px;
   border-left: 5px solid #007bff;
   background: #fff;
+}
+#video iframe{
+  widows: 100%;
 }
 /* Contacts */
 #contact {
   background: #fff;
+}
+#map {
+  width: 100%;
+  height: 250px;
 }
 /* Footer */
 footer {
@@ -214,3 +228,10 @@ footer {
     transform: translateX(0);
   }
 }
+
+/* media Queries */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+} 
