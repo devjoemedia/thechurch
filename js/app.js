@@ -9,3 +9,17 @@ zoom: 9 // starting zoom
 var marker = new mapboxgl.Marker()
 .setLngLat([ 0.107379, 5.722018])
 .addTo(map);
+
+let navbar = document.querySelector('.navbar');
+
+window.onscroll = ()=> {
+  if(window.scrollY >= 580)
+  {
+    navbar.style.opacity = 1;
+  }
+  if(window.scrollY < 580)
+  {
+    navbar.style.opacity = 0.6;
+  }
+
+};

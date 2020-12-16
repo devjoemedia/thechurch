@@ -21,7 +21,9 @@ header {
 }
 .navbar {
   font-size: 12px;
-  background-color: transparent;
+  background-color: #000 !important;
+  opacity: 0.6;
+  transition:  all .3s ease;
 }
 .navbar a {
   color: #fff !important;
