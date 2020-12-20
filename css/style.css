@@ -31,7 +31,8 @@ header {
 }
 /* Banner */
 #myCarousel{
-  height: 100vh;
+  /* padding-top: 50vh; */
+  height: 75vh;
 }
 .carousel-inner,.carousel-item {
   height: 100%;
@@ -54,6 +55,17 @@ header {
   display: grid;
   place-items: center;
 }
+.carousel-caption h1 {
+  font-size: 45px;
+  letter-spacing: -.5px;
+  line-height: 61px;
+  margin-bottom: 13px;
+  font-weight: 300;
+}
+.carousel-caption p{
+  font-size: 20px;
+  font-weight: 300;
+}
 #banner {
   height: 80vh;
   width: 100vw;
@@ -73,7 +85,7 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(55, 83, 112, 0.6);
+  background: rgba(0,0,0,.5);
   z-index: 2;
 }
 
